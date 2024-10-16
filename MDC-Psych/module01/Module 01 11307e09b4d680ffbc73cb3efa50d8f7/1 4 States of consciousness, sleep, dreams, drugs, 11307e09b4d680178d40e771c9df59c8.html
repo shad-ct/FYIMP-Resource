@@ -1,0 +1,689 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><title>1.4 States of consciousness, sleep, dreams, drugs, meditation, and hypnosis</title><style>
+/* cspell:disable-file */
+/* webkit printing magic: print all background colors */
+html {
+	-webkit-print-color-adjust: exact;
+}
+* {
+	box-sizing: border-box;
+	-webkit-print-color-adjust: exact;
+}
+
+html,
+body {
+	margin: 0;
+	padding: 0;
+}
+@media only screen {
+	body {
+		margin: 2em auto;
+		max-width: 900px;
+		color: rgb(55, 53, 47);
+	}
+}
+
+body {
+	line-height: 1.5;
+	white-space: pre-wrap;
+}
+
+a,
+a.visited {
+	color: inherit;
+	text-decoration: underline;
+}
+
+.pdf-relative-link-path {
+	font-size: 80%;
+	color: #444;
+}
+
+h1,
+h2,
+h3 {
+	letter-spacing: -0.01em;
+	line-height: 1.2;
+	font-weight: 600;
+	margin-bottom: 0;
+}
+
+.page-title {
+	font-size: 2.5rem;
+	font-weight: 700;
+	margin-top: 0;
+	margin-bottom: 0.75em;
+}
+
+h1 {
+	font-size: 1.875rem;
+	margin-top: 1.875rem;
+}
+
+h2 {
+	font-size: 1.5rem;
+	margin-top: 1.5rem;
+}
+
+h3 {
+	font-size: 1.25rem;
+	margin-top: 1.25rem;
+}
+
+.source {
+	border: 1px solid #ddd;
+	border-radius: 3px;
+	padding: 1.5em;
+	word-break: break-all;
+}
+
+.callout {
+	border-radius: 3px;
+	padding: 1rem;
+}
+
+figure {
+	margin: 1.25em 0;
+	page-break-inside: avoid;
+}
+
+figcaption {
+	opacity: 0.5;
+	font-size: 85%;
+	margin-top: 0.5em;
+}
+
+mark {
+	background-color: transparent;
+}
+
+.indented {
+	padding-left: 1.5em;
+}
+
+hr {
+	background: transparent;
+	display: block;
+	width: 100%;
+	height: 1px;
+	visibility: visible;
+	border: none;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.09);
+}
+
+img {
+	max-width: 100%;
+}
+
+@media only print {
+	img {
+		max-height: 100vh;
+		object-fit: contain;
+	}
+}
+
+@page {
+	margin: 1in;
+}
+
+.collection-content {
+	font-size: 0.875rem;
+}
+
+.column-list {
+	display: flex;
+	justify-content: space-between;
+}
+
+.column {
+	padding: 0 1em;
+}
+
+.column:first-child {
+	padding-left: 0;
+}
+
+.column:last-child {
+	padding-right: 0;
+}
+
+.table_of_contents-item {
+	display: block;
+	font-size: 0.875rem;
+	line-height: 1.3;
+	padding: 0.125rem;
+}
+
+.table_of_contents-indent-1 {
+	margin-left: 1.5rem;
+}
+
+.table_of_contents-indent-2 {
+	margin-left: 3rem;
+}
+
+.table_of_contents-indent-3 {
+	margin-left: 4.5rem;
+}
+
+.table_of_contents-link {
+	text-decoration: none;
+	opacity: 0.7;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.18);
+}
+
+table,
+th,
+td {
+	border: 1px solid rgba(55, 53, 47, 0.09);
+	border-collapse: collapse;
+}
+
+table {
+	border-left: none;
+	border-right: none;
+}
+
+th,
+td {
+	font-weight: normal;
+	padding: 0.25em 0.5em;
+	line-height: 1.5;
+	min-height: 1.5em;
+	text-align: left;
+}
+
+th {
+	color: rgba(55, 53, 47, 0.6);
+}
+
+ol,
+ul {
+	margin: 0;
+	margin-block-start: 0.6em;
+	margin-block-end: 0.6em;
+}
+
+li > ol:first-child,
+li > ul:first-child {
+	margin-block-start: 0.6em;
+}
+
+ul > li {
+	list-style: disc;
+}
+
+ul.to-do-list {
+	padding-inline-start: 0;
+}
+
+ul.to-do-list > li {
+	list-style: none;
+}
+
+.to-do-children-checked {
+	text-decoration: line-through;
+	opacity: 0.375;
+}
+
+ul.toggle > li {
+	list-style: none;
+}
+
+ul {
+	padding-inline-start: 1.7em;
+}
+
+ul > li {
+	padding-left: 0.1em;
+}
+
+ol {
+	padding-inline-start: 1.6em;
+}
+
+ol > li {
+	padding-left: 0.2em;
+}
+
+.mono ol {
+	padding-inline-start: 2em;
+}
+
+.mono ol > li {
+	text-indent: -0.4em;
+}
+
+.toggle {
+	padding-inline-start: 0em;
+	list-style-type: none;
+}
+
+/* Indent toggle children */
+.toggle > li > details {
+	padding-left: 1.7em;
+}
+
+.toggle > li > details > summary {
+	margin-left: -1.1em;
+}
+
+.selected-value {
+	display: inline-block;
+	padding: 0 0.5em;
+	background: rgba(206, 205, 202, 0.5);
+	border-radius: 3px;
+	margin-right: 0.5em;
+	margin-top: 0.3em;
+	margin-bottom: 0.3em;
+	white-space: nowrap;
+}
+
+.collection-title {
+	display: inline-block;
+	margin-right: 1em;
+}
+
+.page-description {
+    margin-bottom: 2em;
+}
+
+.simple-table {
+	margin-top: 1em;
+	font-size: 0.875rem;
+	empty-cells: show;
+}
+.simple-table td {
+	height: 29px;
+	min-width: 120px;
+}
+
+.simple-table th {
+	height: 29px;
+	min-width: 120px;
+}
+
+.simple-table-header-color {
+	background: rgb(247, 246, 243);
+	color: black;
+}
+.simple-table-header {
+	font-weight: 500;
+}
+
+time {
+	opacity: 0.5;
+}
+
+.icon {
+	display: inline-block;
+	max-width: 1.2em;
+	max-height: 1.2em;
+	text-decoration: none;
+	vertical-align: text-bottom;
+	margin-right: 0.5em;
+}
+
+img.icon {
+	border-radius: 3px;
+}
+
+.user-icon {
+	width: 1.5em;
+	height: 1.5em;
+	border-radius: 100%;
+	margin-right: 0.5rem;
+}
+
+.user-icon-inner {
+	font-size: 0.8em;
+}
+
+.text-icon {
+	border: 1px solid #000;
+	text-align: center;
+}
+
+.page-cover-image {
+	display: block;
+	object-fit: cover;
+	width: 100%;
+	max-height: 30vh;
+}
+
+.page-header-icon {
+	font-size: 3rem;
+	margin-bottom: 1rem;
+}
+
+.page-header-icon-with-cover {
+	margin-top: -0.72em;
+	margin-left: 0.07em;
+}
+
+.page-header-icon img {
+	border-radius: 3px;
+}
+
+.link-to-page {
+	margin: 1em 0;
+	padding: 0;
+	border: none;
+	font-weight: 500;
+}
+
+p > .user {
+	opacity: 0.5;
+}
+
+td > .user,
+td > time {
+	white-space: nowrap;
+}
+
+input[type="checkbox"] {
+	transform: scale(1.5);
+	margin-right: 0.6em;
+	vertical-align: middle;
+}
+
+p {
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+}
+
+.image {
+	border: none;
+	margin: 1.5em 0;
+	padding: 0;
+	border-radius: 0;
+	text-align: center;
+}
+
+.code,
+code {
+	background: rgba(135, 131, 120, 0.15);
+	border-radius: 3px;
+	padding: 0.2em 0.4em;
+	border-radius: 3px;
+	font-size: 85%;
+	tab-size: 2;
+}
+
+code {
+	color: #eb5757;
+}
+
+.code {
+	padding: 1.5em 1em;
+}
+
+.code-wrap {
+	white-space: pre-wrap;
+	word-break: break-all;
+}
+
+.code > code {
+	background: none;
+	padding: 0;
+	font-size: 100%;
+	color: inherit;
+}
+
+blockquote {
+	font-size: 1.25em;
+	margin: 1em 0;
+	padding-left: 1em;
+	border-left: 3px solid rgb(55, 53, 47);
+}
+
+.bookmark {
+	text-decoration: none;
+	max-height: 8em;
+	padding: 0;
+	display: flex;
+	width: 100%;
+	align-items: stretch;
+}
+
+.bookmark-title {
+	font-size: 0.85em;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	height: 1.75em;
+	white-space: nowrap;
+}
+
+.bookmark-text {
+	display: flex;
+	flex-direction: column;
+}
+
+.bookmark-info {
+	flex: 4 1 180px;
+	padding: 12px 14px 14px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.bookmark-image {
+	width: 33%;
+	flex: 1 1 180px;
+	display: block;
+	position: relative;
+	object-fit: cover;
+	border-radius: 1px;
+}
+
+.bookmark-description {
+	color: rgba(55, 53, 47, 0.6);
+	font-size: 0.75em;
+	overflow: hidden;
+	max-height: 4.5em;
+	word-break: break-word;
+}
+
+.bookmark-href {
+	font-size: 0.75em;
+	margin-top: 0.25em;
+}
+
+.sans { font-family: ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol"; }
+.code { font-family: "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace; }
+.serif { font-family: Lyon-Text, Georgia, ui-serif, serif; }
+.mono { font-family: iawriter-mono, Nitti, Menlo, Courier, monospace; }
+.pdf .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK JP'; }
+.pdf:lang(zh-CN) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK SC'; }
+.pdf:lang(zh-TW) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK TC'; }
+.pdf:lang(ko-KR) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK KR'; }
+.pdf .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.pdf .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK JP'; }
+.pdf:lang(zh-CN) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK SC'; }
+.pdf:lang(zh-TW) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK TC'; }
+.pdf:lang(ko-KR) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK KR'; }
+.pdf .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.highlight-default {
+	color: rgba(55, 53, 47, 1);
+}
+.highlight-gray {
+	color: rgba(120, 119, 116, 1);
+	fill: rgba(120, 119, 116, 1);
+}
+.highlight-brown {
+	color: rgba(159, 107, 83, 1);
+	fill: rgba(159, 107, 83, 1);
+}
+.highlight-orange {
+	color: rgba(217, 115, 13, 1);
+	fill: rgba(217, 115, 13, 1);
+}
+.highlight-yellow {
+	color: rgba(203, 145, 47, 1);
+	fill: rgba(203, 145, 47, 1);
+}
+.highlight-teal {
+	color: rgba(68, 131, 97, 1);
+	fill: rgba(68, 131, 97, 1);
+}
+.highlight-blue {
+	color: rgba(51, 126, 169, 1);
+	fill: rgba(51, 126, 169, 1);
+}
+.highlight-purple {
+	color: rgba(144, 101, 176, 1);
+	fill: rgba(144, 101, 176, 1);
+}
+.highlight-pink {
+	color: rgba(193, 76, 138, 1);
+	fill: rgba(193, 76, 138, 1);
+}
+.highlight-red {
+	color: rgba(212, 76, 71, 1);
+	fill: rgba(212, 76, 71, 1);
+}
+.highlight-default_background {
+	color: rgba(55, 53, 47, 1);
+}
+.highlight-gray_background {
+	background: rgba(241, 241, 239, 1);
+}
+.highlight-brown_background {
+	background: rgba(244, 238, 238, 1);
+}
+.highlight-orange_background {
+	background: rgba(251, 236, 221, 1);
+}
+.highlight-yellow_background {
+	background: rgba(251, 243, 219, 1);
+}
+.highlight-teal_background {
+	background: rgba(237, 243, 236, 1);
+}
+.highlight-blue_background {
+	background: rgba(231, 243, 248, 1);
+}
+.highlight-purple_background {
+	background: rgba(244, 240, 247, 0.8);
+}
+.highlight-pink_background {
+	background: rgba(249, 238, 243, 0.8);
+}
+.highlight-red_background {
+	background: rgba(253, 235, 236, 1);
+}
+.block-color-default {
+	color: inherit;
+	fill: inherit;
+}
+.block-color-gray {
+	color: rgba(120, 119, 116, 1);
+	fill: rgba(120, 119, 116, 1);
+}
+.block-color-brown {
+	color: rgba(159, 107, 83, 1);
+	fill: rgba(159, 107, 83, 1);
+}
+.block-color-orange {
+	color: rgba(217, 115, 13, 1);
+	fill: rgba(217, 115, 13, 1);
+}
+.block-color-yellow {
+	color: rgba(203, 145, 47, 1);
+	fill: rgba(203, 145, 47, 1);
+}
+.block-color-teal {
+	color: rgba(68, 131, 97, 1);
+	fill: rgba(68, 131, 97, 1);
+}
+.block-color-blue {
+	color: rgba(51, 126, 169, 1);
+	fill: rgba(51, 126, 169, 1);
+}
+.block-color-purple {
+	color: rgba(144, 101, 176, 1);
+	fill: rgba(144, 101, 176, 1);
+}
+.block-color-pink {
+	color: rgba(193, 76, 138, 1);
+	fill: rgba(193, 76, 138, 1);
+}
+.block-color-red {
+	color: rgba(212, 76, 71, 1);
+	fill: rgba(212, 76, 71, 1);
+}
+.block-color-default_background {
+	color: inherit;
+	fill: inherit;
+}
+.block-color-gray_background {
+	background: rgba(241, 241, 239, 1);
+}
+.block-color-brown_background {
+	background: rgba(244, 238, 238, 1);
+}
+.block-color-orange_background {
+	background: rgba(251, 236, 221, 1);
+}
+.block-color-yellow_background {
+	background: rgba(251, 243, 219, 1);
+}
+.block-color-teal_background {
+	background: rgba(237, 243, 236, 1);
+}
+.block-color-blue_background {
+	background: rgba(231, 243, 248, 1);
+}
+.block-color-purple_background {
+	background: rgba(244, 240, 247, 0.8);
+}
+.block-color-pink_background {
+	background: rgba(249, 238, 243, 0.8);
+}
+.block-color-red_background {
+	background: rgba(253, 235, 236, 1);
+}
+.select-value-color-uiBlue { background-color: rgba(35, 131, 226, .07); }
+.select-value-color-pink { background-color: rgba(245, 224, 233, 1); }
+.select-value-color-purple { background-color: rgba(232, 222, 238, 1); }
+.select-value-color-green { background-color: rgba(219, 237, 219, 1); }
+.select-value-color-gray { background-color: rgba(227, 226, 224, 1); }
+.select-value-color-transparentGray { background-color: rgba(227, 226, 224, 0); }
+.select-value-color-translucentGray { background-color: rgba(0, 0, 0, 0.06); }
+.select-value-color-orange { background-color: rgba(250, 222, 201, 1); }
+.select-value-color-brown { background-color: rgba(238, 224, 218, 1); }
+.select-value-color-red { background-color: rgba(255, 226, 221, 1); }
+.select-value-color-yellow { background-color: rgba(253, 236, 200, 1); }
+.select-value-color-blue { background-color: rgba(211, 229, 239, 1); }
+.select-value-color-pageGlass { background-color: undefined; }
+.select-value-color-washGlass { background-color: undefined; }
+
+.checkbox {
+	display: inline-flex;
+	vertical-align: text-bottom;
+	width: 16;
+	height: 16;
+	background-size: 16px;
+	margin-left: 2px;
+	margin-right: 5px;
+}
+
+.checkbox-on {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20width%3D%2216%22%20height%3D%2216%22%20fill%3D%22%2358A9D7%22%2F%3E%0A%3Cpath%20d%3D%22M6.71429%2012.2852L14%204.9995L12.7143%203.71436L6.71429%209.71378L3.28571%206.2831L2%207.57092L6.71429%2012.2852Z%22%20fill%3D%22white%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+
+.checkbox-off {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20x%3D%220.75%22%20y%3D%220.75%22%20width%3D%2214.5%22%20height%3D%2214.5%22%20fill%3D%22white%22%20stroke%3D%22%2336352F%22%20stroke-width%3D%221.5%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+	
+</style></head><body><article id="11307e09-b4d6-8017-8d40-e771c9df59c8" class="page sans"><header><h1 class="page-title">1.4 States of consciousness, sleep, dreams, drugs, meditation, and hypnosis</h1><p class="page-description"></p></header><div class="page-body"><p id="12107e09-b4d6-80e7-ae76-e81f03bb4bce" class="">Different states of consciousness </p><p id="12107e09-b4d6-8052-97bb-ecc34ea54fda" class="">Biological rhythm </p><ol type="1" id="12107e09-b4d6-808a-893a-d0a727a88165" class="numbered-list" start="1"><li>Circadian rhythm : within a 24hrs cycle (sleep and wake). Suprachiasmatic nucleus regulates the rhythm. </li></ol><ol type="1" id="12107e09-b4d6-80ac-9350-c049e2bab51d" class="numbered-list" start="2"><li>ultradian rhythms : (eating cycle)</li></ol><ol type="1" id="12107e09-b4d6-80f1-826f-f386b0b7eea9" class="numbered-list" start="3"><li>Intermedium rhythm : few days (menstrual cycle)</li></ol><details open=""><summary style="font-weight:600;font-size:1.875em;line-height:1.3;margin:0">Biological rhythm : </summary><div class="indented"><h3 id="12107e09-b4d6-8076-b360-f6bc43c02388" class="">1. Circadian Rhythms</h3><ul id="12107e09-b4d6-8080-9e36-e3dab3ba394d" class="bulleted-list"><li style="list-style-type:disc"><strong>Period:</strong> Approximately 24 hours</li></ul><ul id="12107e09-b4d6-806e-8180-e61bcc4a538c" class="bulleted-list"><li style="list-style-type:disc"><strong>Examples:</strong> Sleep-wake cycles, hormone secretion, body temperature</li></ul><ul id="12107e09-b4d6-80ff-adc5-fd4b3ed55712" class="bulleted-list"><li style="list-style-type:disc"><strong>Influences:</strong> Primarily influenced by light and dark cycles (photoperiod)</li></ul><ul id="12107e09-b4d6-8080-ab55-d12c6a1aee7b" class="bulleted-list"><li style="list-style-type:disc"><strong>Disruption:</strong> Disruption can lead to sleep disorders, mood swings, and decreased productivity.</li></ul><h3 id="12107e09-b4d6-80be-a528-d5b9e6da020f" class="">2. Ultradian Rhythms</h3><ul id="12107e09-b4d6-8058-a107-d94006cdb43a" class="bulleted-list"><li style="list-style-type:disc"><strong>Period:</strong> Less than 24 hours</li></ul><ul id="12107e09-b4d6-80bb-a08e-e4a2d4dfe009" class="bulleted-list"><li style="list-style-type:disc"><strong>Examples:</strong> Heart rate, blood pressure, appetite, REM sleep</li></ul><ul id="12107e09-b4d6-80ae-bfa9-c789045c24f4" class="bulleted-list"><li style="list-style-type:disc"><strong>Influences:</strong> Controlled by internal mechanisms</li></ul><ul id="12107e09-b4d6-80f2-8523-fca5bb7e38b7" class="bulleted-list"><li style="list-style-type:disc"><strong>Disruption:</strong> Disruption can contribute to various health issues, including digestive problems and sleep disturbances.</li></ul><h3 id="12107e09-b4d6-80ac-9805-cbaac4949d84" class="">3. Infradian Rhythms</h3><ul id="12107e09-b4d6-80d9-85d6-c640e87a01cc" class="bulleted-list"><li style="list-style-type:disc"><strong>Period:</strong> More than 24 hours</li></ul><ul id="12107e09-b4d6-8020-b4c6-db352ebb75ca" class="bulleted-list"><li style="list-style-type:disc"><strong>Examples:</strong> Menstrual cycle, seasonal changes in mood (SAD), hibernation</li></ul><ul id="12107e09-b4d6-8035-a256-c945110c9c00" class="bulleted-list"><li style="list-style-type:disc"><strong>Influences:</strong> Influenced by hormonal factors and environmental cues</li></ul><ul id="12107e09-b4d6-8010-b4a8-f98de6cdd2f1" class="bulleted-list"><li style="list-style-type:disc"><strong>Disruption:</strong> Disruption can lead to reproductive problems, mood disorders, and metabolic imbalances.</li></ul></div></details><p id="12107e09-b4d6-805a-a2bd-e335e9deb22d" class="">Levels of consciousness </p><ol type="1" id="12107e09-b4d6-8080-bbc1-cad6d337557d" class="numbered-list" start="1"><li>Conscious level :  what you are aware of.</li></ol><ol type="1" id="12107e09-b4d6-805d-adb2-f9a898f072dc" class="numbered-list" start="2"><li>Non conscious level : blinking , breathing. </li></ol><ol type="1" id="12107e09-b4d6-8011-b9bd-c8e15044874f" class="numbered-list" start="3"><li>Pre conscious level : </li></ol><ol type="1" id="12107e09-b4d6-8030-8f42-d35e70f9d029" class="numbered-list" start="4"><li>Sub conscious level : when things strikes you connects (kinda like dekavh)</li></ol><ol type="1" id="12107e09-b4d6-8065-96fa-f64c1a18d171" class="numbered-list" start="5"><li>Unconscious level : (influence you indirectly . It is there but you try to supress it , you may forget it but its still there) </li></ol><details open=""><summary style="font-weight:600;font-size:1.875em;line-height:1.3;margin:0">Levels of consciousness </summary><div class="indented"><h3 id="12107e09-b4d6-8018-8049-e4f8de0335d8" class="">1. <strong>Conscious Level</strong></h3><ul id="12107e09-b4d6-8061-9345-f35e1705c783" class="bulleted-list"><li style="list-style-type:disc"><strong>Definition:</strong> This is the level of awareness where we are fully aware of our thoughts, feelings, and sensations. We are actively engaged with our surroundings and can easily recall information from our memory.</li></ul><ul id="12107e09-b4d6-80ab-b575-faffb2957df1" class="bulleted-list"><li style="list-style-type:disc"><strong>Examples:</strong> Thinking about a problem, feeling hungry, noticing a loud noise.</li></ul><h3 id="12107e09-b4d6-80d4-9799-fdfe9ec3e68a" class="">2. <strong>Non-Conscious Level</strong></h3><ul id="12107e09-b4d6-8038-8225-cdfe17e437ff" class="bulleted-list"><li style="list-style-type:disc"><strong>Definition:</strong> This level refers to processes that occur outside of our awareness. These include bodily functions like breathing, heart rate, and digestion, as well as unconscious psychological processes.</li></ul><ul id="12107e09-b4d6-80f2-9c4f-e82df84204ed" class="bulleted-list"><li style="list-style-type:disc"><strong>Examples:</strong> Breathing, digestion, automatic reflexes.</li></ul><h3 id="12107e09-b4d6-808c-b64e-e3b5afc59824" class="">3. <strong>Preconscious Level</strong></h3><ul id="12107e09-b4d6-8032-aaf6-daec8d13c780" class="bulleted-list"><li style="list-style-type:disc"><strong>Definition:</strong> This level contains thoughts, feelings, and memories that are not currently in our conscious awareness but can be easily brought to mind. They are often just below the surface of consciousness.</li></ul><ul id="12107e09-b4d6-805c-971e-ed2fcd0b5bf5" class="bulleted-list"><li style="list-style-type:disc"><strong>Examples:</strong> Remembering a childhood memory, recalling a forgotten phone number.</li></ul><h3 id="12107e09-b4d6-8002-a470-c03ec3f35feb" class="">4. <strong>Subconscious Level</strong></h3><ul id="12107e09-b4d6-806c-876d-e60be870e156" class="bulleted-list"><li style="list-style-type:disc"><strong>Definition:</strong> This term is often used interchangeably with &quot;preconscious&quot; but can also refer to a deeper level of awareness that is difficult to access. It may contain repressed thoughts, feelings, and memories.</li></ul><ul id="12107e09-b4d6-800b-99cb-de272df9b13b" class="bulleted-list"><li style="list-style-type:disc"><strong>Examples:</strong> Repressed childhood trauma, hidden desires.</li></ul><h3 id="12107e09-b4d6-800f-a6f2-df9c69d8724b" class="">5. <strong>Unconscious Level</strong></h3><ul id="12107e09-b4d6-8064-94ca-e066f8f09ea7" class="bulleted-list"><li style="list-style-type:disc"><strong>Definition:</strong> This level, according to Sigmund Freud&#x27;s psychoanalytic theory, is the deepest level of the mind, containing repressed thoughts, feelings, and memories that are inaccessible to conscious awareness. It is believed to influence behavior and emotions.</li></ul><ul id="12107e09-b4d6-8049-bc60-d5f2b1924539" class="bulleted-list"><li style="list-style-type:disc"><strong>Examples:</strong> Repressed desires, childhood traumas.</li></ul></div></details><p id="12107e09-b4d6-80d2-be56-ce980305bfc7" class="">
+</p><p id="12107e09-b4d6-80f5-b70c-d599aee6deb9" class="">Extra sensory perception </p><p id="12107e09-b4d6-8053-877c-fbf9ec2b239d" class="">Clairvoyance </p><p id="12107e09-b4d6-806e-b1db-d5dcd1791a5e" class="">
+</p><p id="12107e09-b4d6-80f2-a8ce-c5782bbf5d56" class="">Nature vs nurture debate</p><p id="12107e09-b4d6-8036-b499-e129ecd33b58" class="">The <strong>nature versus nurture</strong> debate is a classic philosophical question that explores the relative contributions of genetic factors (nature) and environmental influences (nurture) in shaping human behavior and development.</p><p id="12107e09-b4d6-8057-98dd-e85b12110874" class=""><strong>Nature</strong> refers to our inherited traits, such as physical characteristics, temperament, and genetic predispositions. It is the biological blueprint we receive from our parents.</p><p id="12107e09-b4d6-8021-ac29-cb393c9e0d52" class="">
+</p><p id="12107e09-b4d6-8049-93ef-d646a8c67395" class="">
+</p><p id="12107e09-b4d6-80a2-b242-ffe829b0cef0" class="">Biopsycho social model of psychology <br/><br/></p><p id="12107e09-b4d6-808c-adfa-c8eb55b7ee88" class="">The biopsychosocial model of psychology is a comprehensive framework that emphasizes the interconnectedness of biological, psychological, and social factors in understanding and explaining human behavior and well-being. It suggests that a holistic approach is necessary to fully understand and address complex psychological issues.</p><p id="12107e09-b4d6-800f-a916-fd3a7814dfc5" class=""><strong>Biological Factors:</strong></p><ul id="12107e09-b4d6-8004-8824-c63168a5b395" class="bulleted-list"><li style="list-style-type:disc"><strong>Genetics:</strong> Hereditary factors can predispose individuals to certain psychological disorders or traits.</li></ul><ul id="12107e09-b4d6-8042-93ab-cefb832ea59e" class="bulleted-list"><li style="list-style-type:disc"><strong>Physiology:</strong> Biological processes such as brain chemistry, hormone levels, and neurotransmitter activity can influence thoughts, emotions, and behaviors.</li></ul><ul id="12107e09-b4d6-80fc-be72-d252023241fd" class="bulleted-list"><li style="list-style-type:disc"><strong>Health:</strong> Physical health conditions can impact mental health, and vice versa.</li></ul><p id="12107e09-b4d6-80f8-99ff-c3ee53a64934" class=""><strong>Psychological Factors:</strong></p><ul id="12107e09-b4d6-802c-916a-deaf0c0872b0" class="bulleted-list"><li style="list-style-type:disc"><strong>Cognition:</strong> Thoughts, beliefs, and perceptions shape our experiences and behaviors.</li></ul><ul id="12107e09-b4d6-8023-987a-d07b583dba06" class="bulleted-list"><li style="list-style-type:disc"><strong>Emotions:</strong> Our emotional responses can influence our mental and physical health.</li></ul><ul id="12107e09-b4d6-802f-a40c-e68b45d9d087" class="bulleted-list"><li style="list-style-type:disc"><strong>Personality:</strong> Individual personality traits can affect how we cope with stress and challenges.</li></ul><p id="12107e09-b4d6-8059-bd14-f7a63c18cad2" class=""><strong>Social Factors:</strong></p><ul id="12107e09-b4d6-80c3-94b3-f12f224a3c84" class="bulleted-list"><li style="list-style-type:disc"><strong>Relationships:</strong> Our interactions with others can significantly impact our mental well-being.</li></ul><ul id="12107e09-b4d6-807d-b7fb-ee3a7834375c" class="bulleted-list"><li style="list-style-type:disc"><strong>Culture:</strong> Cultural norms and values can shape our thoughts, feelings, and behaviors.</li></ul><ul id="12107e09-b4d6-80c9-be50-ffb18025fc2f" class="bulleted-list"><li style="list-style-type:disc"><strong>Socioeconomic status:</strong> Economic factors can influence access to healthcare, education, and support systems.</li></ul><p id="12107e09-b4d6-808e-bd64-d7c3acee957c" class="">The biopsychosocial model recognizes that these factors are interconnected and can influence each other. For example, a genetic predisposition to depression may be triggered by stressful life events (social factors) and negative thought patterns (psychological factors).</p><p id="12107e09-b4d6-806b-8cc5-ff8f1b69567f" class="">
+</p></div></article><span class="sans" style="font-size:14px;padding-top:2em"></span></body></html>
