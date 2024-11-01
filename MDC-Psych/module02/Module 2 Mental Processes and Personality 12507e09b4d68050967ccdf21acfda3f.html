@@ -1,0 +1,686 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><title>Module 2: Mental Processes and Personality</title><style>
+/* cspell:disable-file */
+/* webkit printing magic: print all background colors */
+html {
+	-webkit-print-color-adjust: exact;
+}
+* {
+	box-sizing: border-box;
+	-webkit-print-color-adjust: exact;
+}
+
+html,
+body {
+	margin: 0;
+	padding: 0;
+}
+@media only screen {
+	body {
+		margin: 2em auto;
+		max-width: 900px;
+		color: rgb(55, 53, 47);
+	}
+}
+
+body {
+	line-height: 1.5;
+	white-space: pre-wrap;
+}
+
+a,
+a.visited {
+	color: inherit;
+	text-decoration: underline;
+}
+
+.pdf-relative-link-path {
+	font-size: 80%;
+	color: #444;
+}
+
+h1,
+h2,
+h3 {
+	letter-spacing: -0.01em;
+	line-height: 1.2;
+	font-weight: 600;
+	margin-bottom: 0;
+}
+
+.page-title {
+	font-size: 2.5rem;
+	font-weight: 700;
+	margin-top: 0;
+	margin-bottom: 0.75em;
+}
+
+h1 {
+	font-size: 1.875rem;
+	margin-top: 1.875rem;
+}
+
+h2 {
+	font-size: 1.5rem;
+	margin-top: 1.5rem;
+}
+
+h3 {
+	font-size: 1.25rem;
+	margin-top: 1.25rem;
+}
+
+.source {
+	border: 1px solid #ddd;
+	border-radius: 3px;
+	padding: 1.5em;
+	word-break: break-all;
+}
+
+.callout {
+	border-radius: 3px;
+	padding: 1rem;
+}
+
+figure {
+	margin: 1.25em 0;
+	page-break-inside: avoid;
+}
+
+figcaption {
+	opacity: 0.5;
+	font-size: 85%;
+	margin-top: 0.5em;
+}
+
+mark {
+	background-color: transparent;
+}
+
+.indented {
+	padding-left: 1.5em;
+}
+
+hr {
+	background: transparent;
+	display: block;
+	width: 100%;
+	height: 1px;
+	visibility: visible;
+	border: none;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.09);
+}
+
+img {
+	max-width: 100%;
+}
+
+@media only print {
+	img {
+		max-height: 100vh;
+		object-fit: contain;
+	}
+}
+
+@page {
+	margin: 1in;
+}
+
+.collection-content {
+	font-size: 0.875rem;
+}
+
+.column-list {
+	display: flex;
+	justify-content: space-between;
+}
+
+.column {
+	padding: 0 1em;
+}
+
+.column:first-child {
+	padding-left: 0;
+}
+
+.column:last-child {
+	padding-right: 0;
+}
+
+.table_of_contents-item {
+	display: block;
+	font-size: 0.875rem;
+	line-height: 1.3;
+	padding: 0.125rem;
+}
+
+.table_of_contents-indent-1 {
+	margin-left: 1.5rem;
+}
+
+.table_of_contents-indent-2 {
+	margin-left: 3rem;
+}
+
+.table_of_contents-indent-3 {
+	margin-left: 4.5rem;
+}
+
+.table_of_contents-link {
+	text-decoration: none;
+	opacity: 0.7;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.18);
+}
+
+table,
+th,
+td {
+	border: 1px solid rgba(55, 53, 47, 0.09);
+	border-collapse: collapse;
+}
+
+table {
+	border-left: none;
+	border-right: none;
+}
+
+th,
+td {
+	font-weight: normal;
+	padding: 0.25em 0.5em;
+	line-height: 1.5;
+	min-height: 1.5em;
+	text-align: left;
+}
+
+th {
+	color: rgba(55, 53, 47, 0.6);
+}
+
+ol,
+ul {
+	margin: 0;
+	margin-block-start: 0.6em;
+	margin-block-end: 0.6em;
+}
+
+li > ol:first-child,
+li > ul:first-child {
+	margin-block-start: 0.6em;
+}
+
+ul > li {
+	list-style: disc;
+}
+
+ul.to-do-list {
+	padding-inline-start: 0;
+}
+
+ul.to-do-list > li {
+	list-style: none;
+}
+
+.to-do-children-checked {
+	text-decoration: line-through;
+	opacity: 0.375;
+}
+
+ul.toggle > li {
+	list-style: none;
+}
+
+ul {
+	padding-inline-start: 1.7em;
+}
+
+ul > li {
+	padding-left: 0.1em;
+}
+
+ol {
+	padding-inline-start: 1.6em;
+}
+
+ol > li {
+	padding-left: 0.2em;
+}
+
+.mono ol {
+	padding-inline-start: 2em;
+}
+
+.mono ol > li {
+	text-indent: -0.4em;
+}
+
+.toggle {
+	padding-inline-start: 0em;
+	list-style-type: none;
+}
+
+/* Indent toggle children */
+.toggle > li > details {
+	padding-left: 1.7em;
+}
+
+.toggle > li > details > summary {
+	margin-left: -1.1em;
+}
+
+.selected-value {
+	display: inline-block;
+	padding: 0 0.5em;
+	background: rgba(206, 205, 202, 0.5);
+	border-radius: 3px;
+	margin-right: 0.5em;
+	margin-top: 0.3em;
+	margin-bottom: 0.3em;
+	white-space: nowrap;
+}
+
+.collection-title {
+	display: inline-block;
+	margin-right: 1em;
+}
+
+.page-description {
+    margin-bottom: 2em;
+}
+
+.simple-table {
+	margin-top: 1em;
+	font-size: 0.875rem;
+	empty-cells: show;
+}
+.simple-table td {
+	height: 29px;
+	min-width: 120px;
+}
+
+.simple-table th {
+	height: 29px;
+	min-width: 120px;
+}
+
+.simple-table-header-color {
+	background: rgb(247, 246, 243);
+	color: black;
+}
+.simple-table-header {
+	font-weight: 500;
+}
+
+time {
+	opacity: 0.5;
+}
+
+.icon {
+	display: inline-block;
+	max-width: 1.2em;
+	max-height: 1.2em;
+	text-decoration: none;
+	vertical-align: text-bottom;
+	margin-right: 0.5em;
+}
+
+img.icon {
+	border-radius: 3px;
+}
+
+.user-icon {
+	width: 1.5em;
+	height: 1.5em;
+	border-radius: 100%;
+	margin-right: 0.5rem;
+}
+
+.user-icon-inner {
+	font-size: 0.8em;
+}
+
+.text-icon {
+	border: 1px solid #000;
+	text-align: center;
+}
+
+.page-cover-image {
+	display: block;
+	object-fit: cover;
+	width: 100%;
+	max-height: 30vh;
+}
+
+.page-header-icon {
+	font-size: 3rem;
+	margin-bottom: 1rem;
+}
+
+.page-header-icon-with-cover {
+	margin-top: -0.72em;
+	margin-left: 0.07em;
+}
+
+.page-header-icon img {
+	border-radius: 3px;
+}
+
+.link-to-page {
+	margin: 1em 0;
+	padding: 0;
+	border: none;
+	font-weight: 500;
+}
+
+p > .user {
+	opacity: 0.5;
+}
+
+td > .user,
+td > time {
+	white-space: nowrap;
+}
+
+input[type="checkbox"] {
+	transform: scale(1.5);
+	margin-right: 0.6em;
+	vertical-align: middle;
+}
+
+p {
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+}
+
+.image {
+	border: none;
+	margin: 1.5em 0;
+	padding: 0;
+	border-radius: 0;
+	text-align: center;
+}
+
+.code,
+code {
+	background: rgba(135, 131, 120, 0.15);
+	border-radius: 3px;
+	padding: 0.2em 0.4em;
+	border-radius: 3px;
+	font-size: 85%;
+	tab-size: 2;
+}
+
+code {
+	color: #eb5757;
+}
+
+.code {
+	padding: 1.5em 1em;
+}
+
+.code-wrap {
+	white-space: pre-wrap;
+	word-break: break-all;
+}
+
+.code > code {
+	background: none;
+	padding: 0;
+	font-size: 100%;
+	color: inherit;
+}
+
+blockquote {
+	font-size: 1.25em;
+	margin: 1em 0;
+	padding-left: 1em;
+	border-left: 3px solid rgb(55, 53, 47);
+}
+
+.bookmark {
+	text-decoration: none;
+	max-height: 8em;
+	padding: 0;
+	display: flex;
+	width: 100%;
+	align-items: stretch;
+}
+
+.bookmark-title {
+	font-size: 0.85em;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	height: 1.75em;
+	white-space: nowrap;
+}
+
+.bookmark-text {
+	display: flex;
+	flex-direction: column;
+}
+
+.bookmark-info {
+	flex: 4 1 180px;
+	padding: 12px 14px 14px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.bookmark-image {
+	width: 33%;
+	flex: 1 1 180px;
+	display: block;
+	position: relative;
+	object-fit: cover;
+	border-radius: 1px;
+}
+
+.bookmark-description {
+	color: rgba(55, 53, 47, 0.6);
+	font-size: 0.75em;
+	overflow: hidden;
+	max-height: 4.5em;
+	word-break: break-word;
+}
+
+.bookmark-href {
+	font-size: 0.75em;
+	margin-top: 0.25em;
+}
+
+.sans { font-family: ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol"; }
+.code { font-family: "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace; }
+.serif { font-family: Lyon-Text, Georgia, ui-serif, serif; }
+.mono { font-family: iawriter-mono, Nitti, Menlo, Courier, monospace; }
+.pdf .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK JP'; }
+.pdf:lang(zh-CN) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK SC'; }
+.pdf:lang(zh-TW) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK TC'; }
+.pdf:lang(ko-KR) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK KR'; }
+.pdf .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.pdf .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK JP'; }
+.pdf:lang(zh-CN) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK SC'; }
+.pdf:lang(zh-TW) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK TC'; }
+.pdf:lang(ko-KR) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK KR'; }
+.pdf .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.highlight-default {
+	color: rgba(55, 53, 47, 1);
+}
+.highlight-gray {
+	color: rgba(120, 119, 116, 1);
+	fill: rgba(120, 119, 116, 1);
+}
+.highlight-brown {
+	color: rgba(159, 107, 83, 1);
+	fill: rgba(159, 107, 83, 1);
+}
+.highlight-orange {
+	color: rgba(217, 115, 13, 1);
+	fill: rgba(217, 115, 13, 1);
+}
+.highlight-yellow {
+	color: rgba(203, 145, 47, 1);
+	fill: rgba(203, 145, 47, 1);
+}
+.highlight-teal {
+	color: rgba(68, 131, 97, 1);
+	fill: rgba(68, 131, 97, 1);
+}
+.highlight-blue {
+	color: rgba(51, 126, 169, 1);
+	fill: rgba(51, 126, 169, 1);
+}
+.highlight-purple {
+	color: rgba(144, 101, 176, 1);
+	fill: rgba(144, 101, 176, 1);
+}
+.highlight-pink {
+	color: rgba(193, 76, 138, 1);
+	fill: rgba(193, 76, 138, 1);
+}
+.highlight-red {
+	color: rgba(212, 76, 71, 1);
+	fill: rgba(212, 76, 71, 1);
+}
+.highlight-default_background {
+	color: rgba(55, 53, 47, 1);
+}
+.highlight-gray_background {
+	background: rgba(241, 241, 239, 1);
+}
+.highlight-brown_background {
+	background: rgba(244, 238, 238, 1);
+}
+.highlight-orange_background {
+	background: rgba(251, 236, 221, 1);
+}
+.highlight-yellow_background {
+	background: rgba(251, 243, 219, 1);
+}
+.highlight-teal_background {
+	background: rgba(237, 243, 236, 1);
+}
+.highlight-blue_background {
+	background: rgba(231, 243, 248, 1);
+}
+.highlight-purple_background {
+	background: rgba(244, 240, 247, 0.8);
+}
+.highlight-pink_background {
+	background: rgba(249, 238, 243, 0.8);
+}
+.highlight-red_background {
+	background: rgba(253, 235, 236, 1);
+}
+.block-color-default {
+	color: inherit;
+	fill: inherit;
+}
+.block-color-gray {
+	color: rgba(120, 119, 116, 1);
+	fill: rgba(120, 119, 116, 1);
+}
+.block-color-brown {
+	color: rgba(159, 107, 83, 1);
+	fill: rgba(159, 107, 83, 1);
+}
+.block-color-orange {
+	color: rgba(217, 115, 13, 1);
+	fill: rgba(217, 115, 13, 1);
+}
+.block-color-yellow {
+	color: rgba(203, 145, 47, 1);
+	fill: rgba(203, 145, 47, 1);
+}
+.block-color-teal {
+	color: rgba(68, 131, 97, 1);
+	fill: rgba(68, 131, 97, 1);
+}
+.block-color-blue {
+	color: rgba(51, 126, 169, 1);
+	fill: rgba(51, 126, 169, 1);
+}
+.block-color-purple {
+	color: rgba(144, 101, 176, 1);
+	fill: rgba(144, 101, 176, 1);
+}
+.block-color-pink {
+	color: rgba(193, 76, 138, 1);
+	fill: rgba(193, 76, 138, 1);
+}
+.block-color-red {
+	color: rgba(212, 76, 71, 1);
+	fill: rgba(212, 76, 71, 1);
+}
+.block-color-default_background {
+	color: inherit;
+	fill: inherit;
+}
+.block-color-gray_background {
+	background: rgba(241, 241, 239, 1);
+}
+.block-color-brown_background {
+	background: rgba(244, 238, 238, 1);
+}
+.block-color-orange_background {
+	background: rgba(251, 236, 221, 1);
+}
+.block-color-yellow_background {
+	background: rgba(251, 243, 219, 1);
+}
+.block-color-teal_background {
+	background: rgba(237, 243, 236, 1);
+}
+.block-color-blue_background {
+	background: rgba(231, 243, 248, 1);
+}
+.block-color-purple_background {
+	background: rgba(244, 240, 247, 0.8);
+}
+.block-color-pink_background {
+	background: rgba(249, 238, 243, 0.8);
+}
+.block-color-red_background {
+	background: rgba(253, 235, 236, 1);
+}
+.select-value-color-uiBlue { background-color: rgba(35, 131, 226, .07); }
+.select-value-color-pink { background-color: rgba(245, 224, 233, 1); }
+.select-value-color-purple { background-color: rgba(232, 222, 238, 1); }
+.select-value-color-green { background-color: rgba(219, 237, 219, 1); }
+.select-value-color-gray { background-color: rgba(227, 226, 224, 1); }
+.select-value-color-transparentGray { background-color: rgba(227, 226, 224, 0); }
+.select-value-color-translucentGray { background-color: rgba(0, 0, 0, 0.06); }
+.select-value-color-orange { background-color: rgba(250, 222, 201, 1); }
+.select-value-color-brown { background-color: rgba(238, 224, 218, 1); }
+.select-value-color-red { background-color: rgba(255, 226, 221, 1); }
+.select-value-color-yellow { background-color: rgba(253, 236, 200, 1); }
+.select-value-color-blue { background-color: rgba(211, 229, 239, 1); }
+.select-value-color-pageGlass { background-color: undefined; }
+.select-value-color-washGlass { background-color: undefined; }
+
+.checkbox {
+	display: inline-flex;
+	vertical-align: text-bottom;
+	width: 16;
+	height: 16;
+	background-size: 16px;
+	margin-left: 2px;
+	margin-right: 5px;
+}
+
+.checkbox-on {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20width%3D%2216%22%20height%3D%2216%22%20fill%3D%22%2358A9D7%22%2F%3E%0A%3Cpath%20d%3D%22M6.71429%2012.2852L14%204.9995L12.7143%203.71436L6.71429%209.71378L3.28571%206.2831L2%207.57092L6.71429%2012.2852Z%22%20fill%3D%22white%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+
+.checkbox-off {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20x%3D%220.75%22%20y%3D%220.75%22%20width%3D%2214.5%22%20height%3D%2214.5%22%20fill%3D%22white%22%20stroke%3D%22%2336352F%22%20stroke-width%3D%221.5%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+	
+</style></head><body><article id="12507e09-b4d6-8050-967c-cdf21acfda3f" class="page sans"><header><h1 class="page-title">Module 2: Mental Processes and Personality</h1><p class="page-description"></p></header><div class="page-body"><p id="12c07e09-b4d6-8090-9f91-c6e93e1f7b20" class="">
+</p><details open=""><summary style="font-weight:600;font-size:1.875em;line-height:1.3;margin:0"><strong>2.1 Learning</strong></summary><div class="indented"><ul id="12c07e09-b4d6-808c-a95c-fa472334bfb1" class="bulleted-list"><li style="list-style-type:disc"><strong>Definition:</strong> Learning is a relatively permanent change in knowledge or behaviour resulting from experience. [1-3]</li></ul><ul id="12c07e09-b4d6-8053-8764-fd4a9024a3ca" class="bulleted-list"><li style="list-style-type:disc"><strong>Features of learning:</strong> [4-6]<ul id="12c07e09-b4d6-808a-bbd4-c817fd49698f" class="bulleted-list"><li style="list-style-type:circle">Involves a change in behaviour or knowledge.</li></ul><ul id="12c07e09-b4d6-80b4-bbf5-f9465989658a" class="bulleted-list"><li style="list-style-type:circle">This change is relatively permanent.</li></ul><ul id="12c07e09-b4d6-80d0-aa02-f9ad17d6d843" class="bulleted-list"><li style="list-style-type:circle">The change results from experience.</li></ul></li></ul><ul id="12c07e09-b4d6-807b-862c-d062256aea94" class="bulleted-list"><li style="list-style-type:disc"><strong>Factors Affecting Learning:</strong> [7-12]<ul id="12c07e09-b4d6-8049-87ab-e47a52678e06" class="bulleted-list"><li style="list-style-type:circle"><strong>Motivation:</strong> A motivated learner is more likely to engage, put in effort, and persist.</li></ul><ul id="12c07e09-b4d6-8037-b5bb-e6ab28db1b88" class="bulleted-list"><li style="list-style-type:circle"><strong>Attention:</strong> Learners must focus on and process the information being presented.</li></ul><ul id="12c07e09-b4d6-80a4-ad4f-d8b00ae6ccc6" class="bulleted-list"><li style="list-style-type:circle"><strong>Practice:</strong> Repeated exposure and interaction strengthen memory and improve performance.</li></ul><ul id="12c07e09-b4d6-8054-a762-da210c934acc" class="bulleted-list"><li style="list-style-type:circle"><strong>Feedback:</strong> Helps learners understand progress, identify areas for improvement, and adjust learning strategies.</li></ul><ul id="12c07e09-b4d6-80cb-9c82-ed2876f2d0ca" class="bulleted-list"><li style="list-style-type:circle"><strong>Cognitive Abilities:</strong> An individual&#x27;s intelligence, memory capacity, and problem-solving skills can impact their learning.</li></ul><ul id="12c07e09-b4d6-80bc-8fd0-d5c1bc7bedc2" class="bulleted-list"><li style="list-style-type:circle"><strong>Reinforcement:</strong> Anything that increases behaviour. [11]<ul id="12c07e09-b4d6-806d-b15e-c4ba4400f060" class="bulleted-list"><li style="list-style-type:square"><strong>Positive reinforcement:</strong> Adding a pleasant stimulus. [13]</li></ul><ul id="12c07e09-b4d6-80c1-b1da-e4f070445c20" class="bulleted-list"><li style="list-style-type:square"><strong>Negative reinforcement:</strong> Removing an unpleasant stimulus. [14]</li></ul></li></ul><ul id="12c07e09-b4d6-8089-9244-e0697c6789e0" class="bulleted-list"><li style="list-style-type:circle"><strong>Punishment:</strong> Anything that decreases behaviour. [15]<ul id="12c07e09-b4d6-80c3-aa8c-e3175cc02ae5" class="bulleted-list"><li style="list-style-type:square"><strong>Positive punishment:</strong> Adding an unpleasant stimulus. [16]</li></ul><ul id="12c07e09-b4d6-8069-90bd-eb08427fe7e9" class="bulleted-list"><li style="list-style-type:square"><strong>Negative punishment:</strong> Removing a pleasant stimulus. [17]</li></ul></li></ul><ul id="12c07e09-b4d6-80d3-a8cb-d23bb59ee85b" class="bulleted-list"><li style="list-style-type:circle"><strong>Shaping:</strong> Reinforcing successively closer approximations of the desired behaviour. [18]</li></ul><ul id="12c07e09-b4d6-8003-834f-ee8ce099de10" class="bulleted-list"><li style="list-style-type:circle"><strong>Cognitive Processes:</strong> Insight, observation, and understanding. [12]</li></ul></li></ul><ul id="12c07e09-b4d6-80d2-aa79-eac5eb939d8e" class="bulleted-list"><li style="list-style-type:disc"><strong>Types of Learning:</strong> [19-24]<ul id="12c07e09-b4d6-809c-87b6-e7f0c9682df5" class="bulleted-list"><li style="list-style-type:circle"><strong>Classical Conditioning:</strong> Associating an existing involuntary reflex with a new stimulus. [23, 25]</li></ul><ul id="12c07e09-b4d6-80da-91d6-ec2dd08db3f1" class="bulleted-list"><li style="list-style-type:circle"><strong>Operant Conditioning:</strong> The consequences of behaviour determine its repetition likelihood. [24, 25]</li></ul><ul id="12c07e09-b4d6-80ee-9b43-fbf2243de3ea" class="bulleted-list"><li style="list-style-type:circle"><strong>Observational Learning:</strong> Occurs through observing and imitating others. [2, 26]</li></ul><ul id="12c07e09-b4d6-8083-a3ae-d5c00ebc17c5" class="bulleted-list"><li style="list-style-type:circle"><strong>Cognitive Learning:</strong> Emphasises mental processes like attention, memory, and problem-solving. [2, 26]</li></ul></li></ul><p id="12c07e09-b4d6-8022-83d2-f54dba6214af" class=""><strong>Potential Exam Questions:</strong></p><ol type="1" id="12c07e09-b4d6-8068-8dea-cdd0eeee6d2a" class="numbered-list" start="1"><li><strong>Question:</strong> Explain the difference between classical and operant conditioning.</li></ol><ol type="1" id="12c07e09-b4d6-80b7-aaa7-fe5526256c41" class="numbered-list" start="2"><li><strong>Question:</strong> Provide an example of shaping in a real-world situation.</li></ol><ol type="1" id="12c07e09-b4d6-804e-bf3d-d5d0456e0ffb" class="numbered-list" start="3"><li><strong>Question:</strong> How do cognitive processes influence learning?</li></ol><p id="12c07e09-b4d6-80da-9e5f-d1a6d24d2085" class=""><strong>Potential Exam Answers:</strong></p><ol type="1" id="12c07e09-b4d6-806a-b069-d46c13bd8612" class="numbered-list" start="1"><li><strong>Answer:</strong> Classical conditioning involves associating an involuntary response with a stimulus. Operant conditioning involves associating a voluntary behaviour with a consequence. [27]</li></ol><ol type="1" id="12c07e09-b4d6-8037-a245-fe670696fa6d" class="numbered-list" start="2"><li><strong>Answer:</strong> A therapist might use shaping to help a person with social anxiety gradually become more comfortable in social situations, by rewarding small steps toward the desired behaviour. [28]</li></ol><ol type="1" id="12c07e09-b4d6-8098-bf71-ffb870c14448" class="numbered-list" start="3"><li><strong>Answer:</strong> Insight, observation, and understanding can lead to more effective and efficient learning. For example, a student who understands the underlying concepts of a mathematical problem may be able to solve it more easily than a student who only memorises the formula. [12]</li></ol></div></details><details open=""><summary style="font-weight:600;font-size:1.875em;line-height:1.3;margin:0"><strong>2.2 Memory</strong></summary><div class="indented"><ul id="12c07e09-b4d6-80ac-9456-d59896eb3374" class="bulleted-list"><li style="list-style-type:disc"><strong>Definition:</strong> The ability to store and retrieve information over time. [4, 29, 30]</li></ul><ul id="12c07e09-b4d6-8083-b6c3-cf923c3209b6" class="bulleted-list"><li style="list-style-type:disc"><strong>Types of Memory:</strong> [31-36]<ul id="12c07e09-b4d6-8012-9e23-f18207ac881d" class="bulleted-list"><li style="list-style-type:circle"><strong>Sensory Memory:</strong> Brief storage of sensory information, lasting less than a second unless attended to. [5, 36]</li></ul><ul id="12c07e09-b4d6-8065-be94-ebbb68b54927" class="bulleted-list"><li style="list-style-type:circle"><strong>Short-Term Memory (STM):</strong> Temporary storage of actively processed information, with limited capacity (around seven items) and duration (about 20 seconds). [6, 8, 37]</li></ul><ul id="12c07e09-b4d6-8034-ad2b-d67047a45368" class="bulleted-list"><li style="list-style-type:circle"><strong>Long-Term Memory (LTM):</strong> Relatively permanent and limitless storage of information. [7-9, 38]</li></ul><ul id="12c07e09-b4d6-8081-8d37-d2007775b025" class="bulleted-list"><li style="list-style-type:circle"><strong>Declarative Memory:</strong> Consciously recalled memory of facts and events. [6, 34]</li></ul><ul id="12c07e09-b4d6-80ed-9b68-d944e665be02" class="bulleted-list"><li style="list-style-type:circle"><strong>Nondeclarative Memory:</strong> Unconscious memory of skills and how to do things. [6, 35]</li></ul></li></ul><ul id="12c07e09-b4d6-80bb-a751-c616ece593d7" class="bulleted-list"><li style="list-style-type:disc"><strong>Memory Processes:</strong> [39-44]<ul id="12c07e09-b4d6-80c9-9b27-d00619ee3668" class="bulleted-list"><li style="list-style-type:circle"><strong>Encoding:</strong> Transforming information into a storable form. [5, 8, 42]</li></ul><ul id="12c07e09-b4d6-808c-8948-d51e164ad4a6" class="bulleted-list"><li style="list-style-type:circle"><strong>Storage:</strong> Maintaining information in memory over time. [5, 8, 43]</li></ul><ul id="12c07e09-b4d6-8032-90ee-f2dc12f8729a" class="bulleted-list"><li style="list-style-type:circle"><strong>Retrieval:</strong> Accessing and retrieving stored information. [5, 10, 44]</li></ul></li></ul><ul id="12c07e09-b4d6-802d-8669-c9d981e41a77" class="bulleted-list"><li style="list-style-type:disc"><strong>Factors Affecting Memory and Forgetting:</strong> [45-51]<ul id="12c07e09-b4d6-80c1-a38c-d44250865ec8" class="bulleted-list"><li style="list-style-type:circle"><strong>Encoding Failure:</strong> Information not encoded properly into LTM. [8, 10, 51]</li></ul><ul id="12c07e09-b4d6-80df-b7f3-ea3a7a02bb54" class="bulleted-list"><li style="list-style-type:circle"><strong>Retrieval Failure:</strong> Stored information is inaccessible. [8, 46]</li></ul><ul id="12c07e09-b4d6-8066-9926-d08ddda5dce8" class="bulleted-list"><li style="list-style-type:circle"><strong>Interference:</strong> Competing memories make it difficult to recall specific information. [9, 47, 52]<ul id="12c07e09-b4d6-8066-b45a-c92e656fbd1c" class="bulleted-list"><li style="list-style-type:square"><strong>Proactive Interference:</strong> Old information prevents recalling newer information. [9, 48, 52]</li></ul><ul id="12c07e09-b4d6-80d5-9311-f1631b55e07d" class="bulleted-list"><li style="list-style-type:square"><strong>Retroactive Interference:</strong> New information hinders recalling older information. [9, 49, 53]</li></ul></li></ul><ul id="12c07e09-b4d6-8008-9150-e654023d378e" class="bulleted-list"><li style="list-style-type:circle"><strong>Decay:</strong> Memories fade over time if not accessed or used. [10, 50, 54]</li></ul><ul id="12c07e09-b4d6-804f-b17e-e96c114c211d" class="bulleted-list"><li style="list-style-type:circle"><strong>Motivated Forgetting:</strong> Consciously or unconsciously forgetting unpleasant or anxiety-provoking information. [Note: This concept is not found in the sources provided and may need independent verification.]</li></ul><ul id="12c07e09-b4d6-8064-a01a-eca4a657499a" class="bulleted-list"><li style="list-style-type:circle"><strong>Retrieval Cues:</strong> Presence or absence of cues that help access stored information. [10, 55]</li></ul><ul id="12c07e09-b4d6-802e-ab3b-fec0719659c0" class="bulleted-list"><li style="list-style-type:circle"><strong>Context-Dependent Memory:</strong> Remembering information better when in the same context where it was learned. [56, 57]</li></ul><ul id="12c07e09-b4d6-8027-b1d2-f94b1fe770ab" class="bulleted-list"><li style="list-style-type:circle"><strong>State-Dependent Memory:</strong> Remembering information better when in the same physiological or psychological state as when it was learned. [19, 58]</li></ul></li></ul><ul id="12c07e09-b4d6-803e-bb35-feee81a065cc" class="bulleted-list"><li style="list-style-type:disc"><strong>Strategies to Improve Memory:</strong> [59-63]<ul id="12c07e09-b4d6-8090-8f98-d5fca9c58470" class="bulleted-list"><li style="list-style-type:circle"><strong>Elaborative Encoding:</strong> Relating new information to existing knowledge and experiences. [56, 59]</li></ul><ul id="12c07e09-b4d6-801a-9459-c7d90009be21" class="bulleted-list"><li style="list-style-type:circle"><strong>Spacing Effect:</strong> Spreading out study sessions over time. [19, 60]</li></ul><ul id="12c07e09-b4d6-80ff-a8c8-f23bfe6e6653" class="bulleted-list"><li style="list-style-type:circle"><strong>Overlearning:</strong> Practising beyond initial mastery. [10, 61]</li></ul><ul id="12c07e09-b4d6-8014-8e16-f71aa96de6f5" class="bulleted-list"><li style="list-style-type:circle"><strong>Context-Dependent Retrieval:</strong> Retrieving information in the same context where it was learned. [10, 62]</li></ul><ul id="12c07e09-b4d6-80a3-969a-dd738e257665" class="bulleted-list"><li style="list-style-type:circle"><strong>State-Dependent Retrieval:</strong> Retrieving information in the same state of consciousness where it was formed. [10, 63]</li></ul></li></ul><p id="12c07e09-b4d6-801a-8049-edfdd309877f" class=""><strong>Potential Exam Questions:</strong></p><ol type="1" id="12c07e09-b4d6-80ee-aa48-edba3f8ed01e" class="numbered-list" start="1"><li><strong>Question:</strong> What are the main differences between sensory, short-term, and long-term memory?</li></ol><ol type="1" id="12c07e09-b4d6-8025-8234-e4c4bad056ea" class="numbered-list" start="2"><li><strong>Question:</strong> Describe the role of retrieval cues in memory recall.</li></ol><ol type="1" id="12c07e09-b4d6-80e9-a8f7-e07507b0c455" class="numbered-list" start="3"><li><strong>Question:</strong> Explain how proactive and retroactive interference can affect memory.</li></ol><p id="12c07e09-b4d6-8049-81eb-df8e3a880f1f" class=""><strong>Potential Exam Answers:</strong></p><ol type="1" id="12c07e09-b4d6-8070-90d8-fb1ce6a5bde2" class="numbered-list" start="1"><li><strong>Answer:</strong> Sensory memory holds brief sensory impressions, short-term memory temporarily stores information being processed, and long-term memory holds information over extended periods. Sensory memory has a very limited duration (less than a second), short-term memory has a limited capacity and duration (about 7 items and 20 seconds), and long-term memory has a virtually unlimited capacity and duration. [36-38, 64]</li></ol><ol type="1" id="12c07e09-b4d6-80b1-b956-e00766ba48bd" class="numbered-list" start="2"><li><strong>Answer:</strong> Retrieval cues are stimuli that help us access stored information. They can be external, like a familiar scent, or internal, like a thought or emotion. When retrieval cues are present, it is easier to recall relevant information. [55]</li></ol><ol type="1" id="12c07e09-b4d6-8062-968a-ee193dd43aff" class="numbered-list" start="3"><li><strong>Answer:</strong> Proactive interference occurs when old information makes it difficult to remember new information, while retroactive interference happens when new information makes it difficult to remember old information. For example, proactive interference might make it hard to remember a new phone number because your old number keeps coming to mind. Retroactive interference might make it hard to remember the details of a book you read last month because you&#x27;ve read several other books since then. [52, 53]</li></ol></div></details><details open=""><summary style="font-weight:600;font-size:1.875em;line-height:1.3;margin:0"><strong>2.3 Motivation, Emotion</strong></summary><div class="indented"><ul id="12c07e09-b4d6-80b9-bd83-c4d0bcab6551" class="bulleted-list"><li style="list-style-type:disc"><p id="12c07e09-b4d6-800c-af02-db1fbe8837cb" class=""><strong>Motivation:</strong>  Motivation is a driving force that initiates and directs behaviour. It can be:</p><ul id="12c07e09-b4d6-8094-adb1-d198371dc82b" class="bulleted-list"><li style="list-style-type:circle"><strong>Intrinsic:</strong> Arising from internal factors such as enjoyment or interest.</li></ul><ul id="12c07e09-b4d6-801f-9229-ee9c3cb6cb91" class="bulleted-list"><li style="list-style-type:circle"><strong>Extrinsic:</strong> Driven by external rewards or pressures. [Note: The provided sources do not offer much information about motivation. This explanation of motivation is from a general understanding. You may wish to verify it with your course materials].</li></ul></li></ul><ul id="12c07e09-b4d6-8014-a910-f3aa2a312c09" class="bulleted-list"><li style="list-style-type:disc"><strong>Emotion:</strong> Emotions are complex psychological states with three components: a subjective experience, a physiological response, and a behavioural or expressive response. [20, 65]</li></ul><ul id="12c07e09-b4d6-8035-a891-c120a15cc91e" class="bulleted-list"><li style="list-style-type:disc"><strong>Nature of Emotions:</strong> [65, 66]<ul id="12c07e09-b4d6-805a-942a-e3f9f9a14493" class="bulleted-list"><li style="list-style-type:circle"><strong>Physiological Changes:</strong> Changes in heart rate, breathing, blood pressure, and body temperature. [21, 66]</li></ul><ul id="12c07e09-b4d6-808c-82c4-ee50f82686dc" class="bulleted-list"><li style="list-style-type:circle"><strong>Cognitive Appraisal:</strong> Personal interpretation of a situation that influences its perceived stressfulness. [Note: This explanation is inferred from the source and not directly stated. You may wish to confirm this with your course material]. [67]</li></ul></li></ul><ul id="12c07e09-b4d6-8005-8df8-d29fc7e76511" class="bulleted-list"><li style="list-style-type:disc"><strong>Expression of Emotions:</strong> [68]<ul id="12c07e09-b4d6-80f2-82db-d3c84a41b7df" class="bulleted-list"><li style="list-style-type:circle"><strong>Facial Expressions:</strong> Universally recognised expressions like smiling or frowning. [68]</li></ul><ul id="12c07e09-b4d6-80cc-afbf-c3d87ae29bf6" class="bulleted-list"><li style="list-style-type:circle"><strong>Body Language:</strong> Posture, gestures, and movements conveying emotional states. [69]</li></ul><ul id="12c07e09-b4d6-8021-a74a-ede389922c2a" class="bulleted-list"><li style="list-style-type:circle"><strong>Vocal Tone:</strong> Tone, volume, and pace revealing emotions. [70]</li></ul></li></ul><ul id="12c07e09-b4d6-80fb-ba6e-cf97fb138812" class="bulleted-list"><li style="list-style-type:disc"><strong>Impact of Emotions:</strong> [71]<ul id="12c07e09-b4d6-8055-9339-c70850f73c05" class="bulleted-list"><li style="list-style-type:circle"><strong>Influence on Behaviour:</strong> Emotions can drive actions (fear leading to avoidance, anger provoking aggression). [71]</li></ul><ul id="12c07e09-b4d6-80d8-a859-dc288d865be6" class="bulleted-list"><li style="list-style-type:circle"><strong>Impact on Cognitive Processes:</strong> Emotions affect attention, memory, and decision-making (anxiety impairing concentration). [72]</li></ul><ul id="12c07e09-b4d6-8051-a8b3-f77e34e39be8" class="bulleted-list"><li style="list-style-type:circle"><strong>Role in Interpersonal Relationships:</strong> Emotions communicate feelings and influence interactions. [73]</li></ul></li></ul><ul id="12c07e09-b4d6-80fd-8fc2-d849a1d6da81" class="bulleted-list"><li style="list-style-type:disc"><strong>Theories of Emotion:</strong> [74]<ul id="12c07e09-b4d6-80b6-a37e-ca7f336f183b" class="bulleted-list"><li style="list-style-type:circle"><strong>James-Lange Theory:</strong> Emotions arise from physiological arousal. [Note: This theory is not mentioned explicitly in the provided sources and may need independent verification]. [74]</li></ul><ul id="12c07e09-b4d6-8097-8db5-ec63caca19a1" class="bulleted-list"><li style="list-style-type:circle"><strong>Cannon-Bard Theory:</strong> Physiological arousal and emotional experience occur simultaneously. [Note: This theory is not mentioned explicitly in the provided sources and may need independent verification]. [75]</li></ul></li></ul><p id="12c07e09-b4d6-8085-b4f5-d327c101870c" class=""><strong>Potential Exam Questions:</strong></p><ol type="1" id="12c07e09-b4d6-8069-8d0e-e36445e3ee0e" class="numbered-list" start="1"><li><strong>Question:</strong> Describe the three components of emotion.</li></ol><ol type="1" id="12c07e09-b4d6-805d-8149-f5aeba25afda" class="numbered-list" start="2"><li><strong>Question:</strong> Explain how emotions can impact memory.</li></ol><ol type="1" id="12c07e09-b4d6-80f0-b4b0-f7ae427b38a8" class="numbered-list" start="3"><li><strong>Question:</strong> Discuss the relationship between emotions and motivation.</li></ol><p id="12c07e09-b4d6-8075-a21e-faacd0380aea" class=""><strong>Potential Exam Answers:</strong></p><ol type="1" id="12c07e09-b4d6-8099-ba85-e90ce5348b0a" class="numbered-list" start="1"><li><strong>Answer:</strong> Emotion involves:<ul id="12c07e09-b4d6-8066-b629-e335873c4ff7" class="bulleted-list"><li style="list-style-type:disc">A subjective experience (personal feeling). [76]</li></ul><ul id="12c07e09-b4d6-8018-a9cd-eab87a455a62" class="bulleted-list"><li style="list-style-type:disc">A physiological response (bodily changes). [77]</li></ul><ul id="12c07e09-b4d6-8099-b7f3-c20b73e76bd2" class="bulleted-list"><li style="list-style-type:disc">A behavioural response (outward expressions). [78]</li></ul></li></ol><ol type="1" id="12c07e09-b4d6-8023-a66a-d92c5835a374" class="numbered-list" start="2"><li><strong>Answer:</strong> Emotions can both enhance and distort memory. Emotionally arousing events (positive or negative) are often remembered more vividly. However, strong emotions can also lead to biases and inaccuracies in memory. [19, 20, 79, 80]</li></ol><ol type="1" id="12c07e09-b4d6-805b-8cca-f8351254ef58" class="numbered-list" start="3"><li><strong>Answer:</strong> Emotions can be powerful motivators. The desire for positive emotions and the avoidance of negative emotions can influence our goals and behaviours. [81] Emotions provide us with information about what we value and find important. [81]</li></ol></div></details><details open=""><summary style="font-weight:600;font-size:1.875em;line-height:1.3;margin:0"><strong>2.4 Personality</strong></summary><div class="indented"><ul id="12c07e09-b4d6-8066-a702-d7119711eca3" class="bulleted-list"><li style="list-style-type:disc"><strong>Definition:</strong> Enduring patterns of thoughts, feelings, and behaviours that make individuals unique. [22, 82] Includes behavioural characteristics, both inherent and acquired, that distinguish one person from another. [22]  Personality can be observed in people’s relations to their environment and social group. [22] [Note: The definition from source [83] is not directly provided in the source. You may wish to verify it with your course materials].</li></ul><ul id="12c07e09-b4d6-8011-baf8-fdbd3611d40c" class="bulleted-list"><li style="list-style-type:disc"><strong>Current Perspectives:</strong> [84, 85]<ul id="12c07e09-b4d6-80a3-88c1-ddd1afbe5381" class="bulleted-list"><li style="list-style-type:circle"><strong>Trait Theories:</strong> Focus on identifying, describing, and measuring traits that compose an individual&#x27;s personality. [84, 86]<ul id="12c07e09-b4d6-804b-a894-e6cc863ee708" class="bulleted-list"><li style="list-style-type:square"><strong>Five Factor Model (Big Five):</strong> Proposes five core personality dimensions: openness to experience, conscientiousness, extraversion, agreeableness, and neuroticism (OCEAN). [85-87]</li></ul></li></ul><ul id="12c07e09-b4d6-801b-85dd-f13ab56ade8e" class="bulleted-list"><li style="list-style-type:circle"><strong>Psychodynamic Theories:</strong> Emphasise the influence of unconscious processes, early childhood experiences, and internal conflicts on personality. [Note: This theory is not directly discussed in the source and may need independent verification]. [88]</li></ul><ul id="12c07e09-b4d6-80be-b013-fc6e0a4f8b7a" class="bulleted-list"><li style="list-style-type:circle"><strong>Humanistic Theories:</strong> Focus on human goodness, growth potential, and the pursuit of self-actualisation. [89-91]</li></ul><ul id="12c07e09-b4d6-8092-88eb-d63626298111" class="bulleted-list"><li style="list-style-type:circle"><strong>Social-Cognitive Theories:</strong> Emphasise the role of learning, social interactions, and cognitive processes in shaping personality. [89, 92]</li></ul><ul id="12c07e09-b4d6-808d-8c26-c61330dacb8f" class="bulleted-list"><li style="list-style-type:circle"><strong>Biological Perspective:</strong> Focuses on the influence of genetics, brain structures (amygdala and prefrontal cortex), and neurotransmitters on personality. [86, 93]</li></ul></li></ul><p id="12c07e09-b4d6-808e-8cc9-def3cde85d72" class=""><strong>Potential Exam Questions:</strong></p><ol type="1" id="12c07e09-b4d6-80f8-be19-d5fbec7c810e" class="numbered-list" start="1"><li><strong>Question:</strong> Describe the key principles of trait theories of personality.</li></ol><ol type="1" id="12c07e09-b4d6-805e-b59c-c28030ac219f" class="numbered-list" start="2"><li><strong>Question:</strong> What are the five personality traits in the Five Factor Model?</li></ol><ol type="1" id="12c07e09-b4d6-8014-95b2-f3dd7ca0520f" class="numbered-list" start="3"><li><strong>Question:</strong> Compare and contrast humanistic and social-cognitive theories of personality.</li></ol><p id="12c07e09-b4d6-805e-a0ae-f98ab852c91f" class=""><strong>Potential Exam Answers:</strong></p><ol type="1" id="12c07e09-b4d6-8089-a6a0-f0218e1b8b4a" class="numbered-list" start="1"><li><strong>Answer:</strong> Trait theories assume that personality consists of stable and enduring traits that influence behaviour across various situations. These theories focus on identifying and measuring these traits to predict and understand individual differences in personality. [94]</li></ol><ol type="1" id="12c07e09-b4d6-805e-8b5a-eec0aaa56090" class="numbered-list" start="2"><li><strong>Answer:</strong> The five traits in the Five Factor Model are:<ul id="12c07e09-b4d6-8049-bc1d-ec2cb5495e95" class="bulleted-list"><li style="list-style-type:disc"><strong>Openness to experience:</strong> Appreciation for novelty, variety, and new experiences. [95, 96]</li></ul><ul id="12c07e09-b4d6-80f7-abe4-d7d97e4bbb37" class="bulleted-list"><li style="list-style-type:disc"><strong>Conscientiousness:</strong> Organisation, responsibility, and dependability. [97, 98]</li></ul><ul id="12c07e09-b4d6-8010-a641-d81bccacace0" class="bulleted-list"><li style="list-style-type:disc"><strong>Extraversion:</strong> Outgoingness, sociability, and energy. [99, 100]</li></ul><ul id="12c07e09-b4d6-80af-b78c-dd86f35949ca" class="bulleted-list"><li style="list-style-type:disc"><strong>Agreeableness:</strong> Kindness, compassion, and cooperation. [101, 102]</li></ul><ul id="12c07e09-b4d6-8026-8337-fc90a2036f63" class="bulleted-list"><li style="list-style-type:disc"><strong>Neuroticism:</strong> Tendency to experience negative emotions like anxiety, worry, and sadness. [103, 104]</li></ul></li></ol><ol type="1" id="12c07e09-b4d6-8089-aa18-cbd779683fc2" class="numbered-list" start="3"><li><strong>Answer:</strong> <strong>Humanistic theories</strong> emphasise innate goodness and the drive for self-actualisation. They propose that individuals have free will and strive for personal growth. <strong>Social-cognitive theories</strong> focus on the interaction of cognitive processes, social experiences, and behaviour in shaping personality. They highlight observational learning, self-efficacy, and environmental factors. [105, 106]</li></ol></div></details><p id="12c07e09-b4d6-809a-9d3f-c85543b30113" class="">
+</p><ul id="12c07e09-b4d6-8056-b691-f832ea72ffdc" class="toggle"><li><details open=""><summary>RANDOM</summary><figure id="12507e09-b4d6-8063-89b1-dbcee6d5f5d3" class="link-to-page"><a href="Module%202%20Mental%20Processes%20and%20Personality%2012507e09b4d68050967ccdf21acfda3f/2%201%20Learning-%20Features,%20Factors%20affecting%20learning%2012507e09b4d6806389b1dbcee6d5f5d3.html">2.1 Learning- Features, Factors affecting learning,</a></figure><figure id="12507e09-b4d6-8093-9490-ca406852d637" class="link-to-page"><a href="Module%202%20Mental%20Processes%20and%20Personality%2012507e09b4d68050967ccdf21acfda3f/2%202%20Memory-%20types%20and%20process,%20factors%20affecting%20m%2012507e09b4d680939490ca406852d637.html">2.2 Memory- types and process, factors affecting memory and forgetting</a></figure><figure id="12507e09-b4d6-8057-b343-ea55aae120d0" class="link-to-page"><a href="Module%202%20Mental%20Processes%20and%20Personality%2012507e09b4d68050967ccdf21acfda3f/2%203%20Motivation,%20Emotion-%20nature,%20expression%20and%20im%2012507e09b4d68057b343ea55aae120d0.html">2.3 Motivation, Emotion- nature, expression and impact</a></figure><figure id="12507e09-b4d6-8007-8958-fe4f57d03f6c" class="link-to-page"><a href="Module%202%20Mental%20Processes%20and%20Personality%2012507e09b4d68050967ccdf21acfda3f/2%204%20Personality%20Concept%20Current%20perspectives%2012507e09b4d680078958fe4f57d03f6c.html">2.4 Personality. Concept. Current perspectives.</a></figure></details></li></ul></div></article><span class="sans" style="font-size:14px;padding-top:2em"></span></body></html>
