@@ -8,7 +8,7 @@ body, html {
   
   .bg-image {
     /* The image used */
-    background-image: url("/bg.png");
+    background-image: url("https://wallpapercave.com/wp/wp3194209.jpg");
   
     /* Add the blur effect */
     filter: blur(8px);

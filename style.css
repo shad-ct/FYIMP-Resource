@@ -1,5 +1,7 @@
 body, html {
     height: 100%;
+    border: 0px;
+    margin: 0px;
   }
   
   * {
@@ -8,11 +10,11 @@ body, html {
   
   .bg-image {
     /* The image used */
-    background-image: url("/bg.png");
+    background-image: url(https://wallpapercave.com/wp/wp3194209.jpg);
   
     /* Add the blur effect */
     filter: blur(8px);
-    -webkit-filter: blur(8px);
+    -webkit-filter: blur(0px);
   
     /* Full height */
     height: 100%;
